@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<poem>
+	<line>
+		<x>100</x>
+		<y>100</y>
+		<color>
+			<red>255</red>
+			<green>100</green>
+			<blue>100</blue>
+		</color>
+		<text>Roses are red</text>
+	</line>
+	<line>
+		<x>140</x>
+		<y>140</y>
+		<color>
+			<red>100</red>
+			<green>100</green>
+			<blue>255</blue>
+		</color>
+		<text>Violets are blue</text>
+	</line>
+	<line>
+		<x>180</x>
+		<y>180</y>
+		<color>
+			<red>100</red>
+			<green>255</green>
+			<blue>100</blue>
+		</color>
+		<text>EDP stinks</text>
+	</line>
+	<line>
+		<x>220</x>
+		<y>220</y>
+		<color>
+			<red>100</red>
+			<green>100</green>
+			<blue>100</blue>
+		</color>
+		<text>and so do you</text>
+	</line>
+</poem>

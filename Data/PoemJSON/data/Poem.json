@@ -1,0 +1,46 @@
+[
+	{
+		"x" : 100,
+		"y" : 100,
+		"color" :
+		{
+			"red" : 255,
+			"green": 100,
+			"blue" : 100
+		},
+		"text" : "Roses are red"
+	},
+	{
+		"x" : 140,
+		"y" : 140,
+		"color" :
+		{
+			"red" : 100,
+			"green": 100,
+			"blue" : 255
+		},
+		"text" : "Violets are blue"
+	},
+	{
+		"x" : 180,
+		"y" : 180,
+		"color" :
+		{
+			"red" : 100,
+			"green": 255,
+			"blue" : 100
+		},
+		"text" : "EDP stinks"
+	},
+	{
+		"x" : 220,
+		"y" : 220,
+		"color" :
+		{
+			"red" : 100,
+			"green": 100,
+			"blue" : 100
+		},
+		"text" : "and so do you"
+	}
+]

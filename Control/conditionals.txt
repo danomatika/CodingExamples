@@ -1,0 +1,162 @@
+Conditionals in Processing (Java)
+=================================
+
+>Geometry is logic and logic is the battlefield of adulthood. - Unknown
+
+Logic? Logic!
+
+—
+
+booleans -> true or false
+
+In code: boolean
+
+int x = 10;
+boolean imCool = false;
+
+—
+
+if statement:
+
+* (conditional)
+* {code block} -> executed if conditional is true
+
+else:
+
+* follows and if, never by itself
+* executed if the condition in the if above was false
+
+else if:
+
+* chain conditions one after the other
+
+
+// shoe choices in my program
+if(it’s raining outside) {
+	wearBoots();
+}
+else {
+	// not raining
+	if(it’s above 65 degrees) {
+		wearSandals();
+	}
+	else {
+		wearSneakers();
+	}
+}
+
+—-
+
+# In ~English:
+
+if A is true -> then do XYZ
+
+if A is false -> then do 123 instead
+
+# In (pseudo)code:
+
+if(A == true) {
+	do XYZ
+}
+
+if(A == false) {
+	do 123
+}
+
+
+—
+
+# In ~English:
+
+if B is true -> then do the dishes
+
+else if C is true -> play Halo (infinity or whatever damn version)
+
+else -> do meh homework
+
+
+# In (pseudo)code:
+
+if(B == true) {
+	doTheDishes();
+}
+else if(C == true) {
+	playHalo();
+}
+else {
+	doMehHomework();
+}
+
+—
+
+# In ~English:
+
+if A and B are true -> then do something
+
+|
+V
+
+if A is true -> then if B is true -> then do something
+
+# In (pseudo)code:
+
+if(A is true AND B is true) {
+	doSomething();
+}
+
+AND -> both things are true
+
+—
+
+
+# In ~English:
+
+if A or B are true -> then do something
+
+# In (pseudo)code:
+
+if(A is true OR B is true) {
+	doSomething();
+}
+
+OR -> either of the things are true
+
+
+—
+
+# In ~English:
+
+I’m cool = true
+
+if I’m cool -> I get the guy/girl for a night out
+
+if I’m not cool -> I eat ice cream and watch Netflix (tomorrow is a better day)
+
+# In (pseudo)code:
+
+// declare boolean variable
+boolean imCool = true;
+
+if(imCool == true) {
+	nightOut();
+}
+
+// imCool == false
+if(imCool != true) {
+	iceCreamNetflix();
+}
+
+|
+V
+
+// short for imCool == true
+if(imCool) {
+	nightOut;
+}
+
+// ! -> not or negation, inverts the boolean value
+// short for imCool == false or imCool != true
+// reads like “if I’m NOT cool”
+if(!imCool) {
+	iceCreamNetflix();
+}
