@@ -8,11 +8,11 @@
 
 You can download this repository as a .zip file using the "Download ZIP" button.
 
-If you have git set up, you can clone this repo using:
+If you have git set up, you can clone this repository using:
 
     git clone https://github.com/danomatika/CodingExamples.git
 
-If changes are made, you will need to redownload or `git pull` to receieve them.
+If changes are made, you will need to redownload or `git pull` to receive them.
 
 ## Where to put this?
 
@@ -20,7 +20,7 @@ Once downloaded, the easiest place to put this is your Processing sketchbook whi
 
 ## Acknowledgements
 
-This repo contains the following 3rd party examples:
+This repository contains the following 3rd party examples:
 
 * BreakoutStarter by Leamon Andres (from [openprocessing.org](http://www.openprocessing.org/sketch/104486))
 * asteroids_v2 by Lambert Wang (from [openprocessing.org](http://www.openprocessing.org/sketch/120807))
