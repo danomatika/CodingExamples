@@ -14,6 +14,10 @@ If you have git set up, you can clone this repo using:
 
 If changes are made, you will need to redownload or `git pull` to receieve them.
 
+## Where to put this?
+
+Once downloaded, the easiest place to put this is your Processing sketchbook which should be in your user Documents folder. On Mac, this is `Documents/Processing`. You can check this location in the Processing File->Preferences dialog.
+
 ## Acknowledgements
 
 This repo contains the following 3rd party examples:
