@@ -9,7 +9,7 @@
 float x, y;
 
 // speed/direction of movement
-float velX = 0.0;
+float velX = 2.0;
 float velY = 6.0;
 
 // how much to jitter
@@ -38,9 +38,15 @@ void draw() {
     fill(random(220), random(220), random(220), 100);
   }
   
-  // check if we're off the screen, if so move back
+  // check if we're off the screen, if so wrap around
+  if(x < -20) {
+    x = width+20;
+  }
   if(x > width+20) {
     x = -20;  
+  }
+  if(y < -20) {
+    y = height+20;  
   }
   if(y > height+20) {
     y = -20;  
