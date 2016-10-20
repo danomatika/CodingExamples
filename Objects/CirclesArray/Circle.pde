@@ -1,5 +1,5 @@
 
-// I have an oject called "Circle"
+// I have an object called "Circle"
 class Circle {
   
   // define what a circle has & what it does
