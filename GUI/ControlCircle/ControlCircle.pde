@@ -1,59 +1,83 @@
 // ControlCircle
 //
-// Control draw properties of a circle
-// using the controlP5 library. Install
-// controlP5 via the the following menu item:
+// Control aspects of a circle animation
+// using a controlP5 interface.
+//
+// Install controlP5 via the menu:
 // Sketch->Import Library...->Add library...
 //
-// Dan Wilcox danomatika.com 2016
+// Dan Wilcox danomatika.com 2015
 
+// requires the controlP5 library
 import controlP5.*;
 
-// main controlP5 object which manages all the widgets
-ControlP5 cp5;
+// gui instance
+ControlP5 gui;
 
-float x, y;
-float diameter;
-color fillColor;
+// colors
+color red = color(229, 69, 69);
+color green = color(47, 234, 120);
+color circleColor = color(200);
+
+// animation variables
+float angle = 0;
+float angleSpeed = 0.01;
 
 void setup() {
   size(400, 400);
-
-  // init the variables
-  x = width/2;
-  y = height/2;
-  diameter = 100;
-  fillColor = color(220, 120, 120);
-
-  // create the main controlP5 object,
-  // note that it takes "this" as it's creation
-  // paramater -> "this" refers to this Processing sketch
-  cp5 = new ControlP5(this);
   
-  // create a slider that automatically updates the "diameter" variable
-  cp5.addSlider("diameter")
-     .setPosition(10, 10) // upper left corner
-     .setSize(200, 20)
-     .setRange(0, 255) // 10, 400
-     .setValue(diameter)
-     ;
-     
-  // create a color picker that calls the function "picker"
-  ColorPicker cp = cp5.addColorPicker("fillColor");
-  cp.setPosition(10, 30);
-  cp.setColorValue(fillColor);
-}
+  // create GUI instance
+  gui = new ControlP5(this);
+ 
+  // add two buttons and a slider
+  gui.addButton("one")
+     .setPosition(10, 10)
+     .setSize(40, 40);
+  gui.addButton("two")
+     .setPosition(width-50, 10)
+     .setSize(40, 40);
+  gui.addSlider("speed")
+     .setPosition(10, height-50)
+     .setSize(width-20, 40)
+     .setRange(0.01, 0.1);
 
-// this function gets called when the color picker
-// named "fillColor" is changed
-void fillColor(color c) {
-  fillColor = c;
+  // set slider default value
+  gui.getController("speed").setValue(angleSpeed);
+     
+  // hide the slider's caption
+  gui.getController("speed").getCaptionLabel().setVisible(false);
 }
 
 void draw() {
   background(100);
   
+  // centered circle who's size depends on sin
   noStroke();
-  fill(fillColor);
-  ellipse(x, y, diameter, diameter);
+  fill(circleColor);
+  float s = abs(sin(angle)) * 200;
+  ellipse(width/2, height/2, s, s);
+  angle = angle + angleSpeed;
+}
+
+// callback event function for when the 
+// button called "one" is pressed
+public void one() {
+  println("one button pressed");
+  circleColor = red;
+}
+
+// callback event function for when the 
+// button called "two" is pressed
+public void two() {
+  println("two button pressed");
+  circleColor = green;
+}
+
+// callback event function for when the 
+// slider calld "speed" is changed, the
+// value float argument reflects the new value
+// of the slider
+public void speed(float value) {
+  println("speed slider changed: "+value);
+  angleSpeed = value;
 }
