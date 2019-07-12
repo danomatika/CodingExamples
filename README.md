@@ -18,6 +18,12 @@ If changes are made, you will need to redownload or `git pull` to receive them.
 
 Once downloaded, the easiest place to put this is your Processing sketchbook which should be in your user Documents folder. On Mac, this is `Documents/Processing`. You can check this location in the Processing File->Preferences dialog.
 
+## Additional Steps
+
+The following examples may require additional steps which are detailed in the README.txt inside the sketch folder:
+
+* Communication/java_websockets
+
 ## Acknowledgements
 
 This repository contains the following 3rd party examples:
