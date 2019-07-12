@@ -1,8 +1,8 @@
 # CodingExamples
 
-[Processing](http://processing.org) examples for the [EDP](http://www.du.edu/ahss/edp/) Coding class @ the University of Denver.
+[Processing](http://processing.org) examples (originally) for the [EDP](http://www.du.edu/ahss/edp/) Coding class @ the University of Denver. Now updated with further tests and useful bobs & bits.
 
-2015-2016 Dan Wilcox <http://danomatika.com>
+2015-2016, 2019 Dan Wilcox <http://danomatika.com>
 
 ## Downloading
 
